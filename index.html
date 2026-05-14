@@ -569,12 +569,11 @@ const STORAGE_KEY = 'nutripet_cat_v1';
 const ACH_KEY     = 'nutripet_cat_achs_v1';
 
 const ALL_EXERCISES = [
-  {id:'gym',    icon:'💪',name:'Academia',    pts:18},
-  {id:'swim',   icon:'🏊',name:'Natação',     pts:20},
-  {id:'bike',   icon:'🚴',name:'Bicicleta',   pts:15},
-  {id:'stretch',icon:'🧘',name:'Alongamento', pts:10},
-  {id:'walk',   icon:'🚶',name:'Caminhada',   pts:12},
-  {id:'dance',  icon:'💃',name:'Dança',       pts:14},
+  {id:'musculacao', icon:'🏋️',name:'Musculação',    pts:18},
+  {id:'pilates',    icon:'🧘',name:'Pilates',        pts:14},
+  {id:'academia',   icon:'💪',name:'Academia',       pts:16},
+  {id:'casa',       icon:'🏠',name:'Treino em Casa', pts:13},
+  {id:'cardio',     icon:'🫀',name:'Cardio',         pts:15},
 ];
 
 const mealDefs = [
@@ -613,8 +612,8 @@ function defaultState(){
     health:80,happiness:70,xp:30,
     water:0,waterGoal:8,
     meals:{breakfast:null,morningSnack:null,lunch:null,afternoonSnack:null,dinner:null},
-    exercises:{gym:false,swim:false,bike:false,stretch:false},
-    activeExercises:['gym','swim','bike','stretch'],
+    exercises:{musculacao:false,pilates:false,academia:false,casa:false,cardio:false},
+    activeExercises:['musculacao','pilates','academia','casa','cardio'],
     calendar:{},streak:0,bestStreak:0,totalGoodDays:0,
     lastDayClosed:null,lastActivityTime:Date.now(),
     fastingActive:false,fastingStart:null,fastingGoalHours:16,fastingGoalMinutes:0,fastingNotifSent:false,
